@@ -25,13 +25,13 @@
 }
 
 .box1 {
-  background-color: white;
+  background-color: #fff;
   width: 70%;
   height: 90vh;
   -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
   font-family: 'segoe UI Historic';
-  font-size: 17px;
+  font-size: 19.6px;
   border-radius: 10px;
   position: relative;
   right: auto;
@@ -53,8 +53,7 @@
 #hp {
   -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  width: 80%;
+  width: 30%;
   height: 35%;
   margin-bottom: 480px;
   margin-left: 40px;
@@ -62,9 +61,10 @@
 
 p {
   margin-right: 50px;
-  text-align: left;
-  word-wrap: break-word;
-  white-space: initial;
+  text-align: center;
+  word-break: break-all;
+  line-height: 2;
+  text-transform: uppercase;
 }
 
 /* OLIVER */
