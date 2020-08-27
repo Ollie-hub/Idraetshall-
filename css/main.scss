@@ -15,37 +15,47 @@ header{
         height: 100vh;
         background-color: $black;
         width: 250px;
-        .logo{
-            width: 70px;
-            height: 70px;
-            background-color: $main-color;
-            border-right: solid 1px $dark;
+        .topnav{
+            background-color: $dark;
+            .logo{
+                width: 70px;
+                height: 70px;
+                background-color: $main-color;
+                border-right: solid 1px $black;
+                img{
+                    width: 60px;
+                    margin: 5px;
+                }
+            }
             img{
-                width: 100%;
+                width: 60px;
+                margin: 5px;
             }
         }
         ul{
             li{
                 font-size: 1.5rem;
-                margin: 1em 0;
+                padding: 1em 0;
                 list-style: none;
-                span{
-                    width: 70px;
-                    text-align: center;
-                }
-                ul{
-                    background-color: $dark;
-                    li{
-                        margin-left: 70px;
-                        justify-items: center;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    span{
+                        display: inline-block;
+                        width: 70px;
+                        text-align: center;
                     }
                 }
             }
+            .fa-angle-right{
+            }
+            li:hover{
+                background-color: $main-color;
+            }
+        .sub-ul{
+            background-color: $dark;
+        }      
         }
-    }
-    a{
-        color: #fff;
-        text-decoration: none;
     }
 }
 

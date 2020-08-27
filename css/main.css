@@ -11,40 +11,50 @@ header nav {
   width: 250px;
 }
 
-header nav .logo {
+header nav .topnav {
+  background-color: #282c35;
+}
+
+header nav .topnav .logo {
   width: 70px;
   height: 70px;
   background-color: #569898;
-  border-right: solid 1px #282c35;
+  border-right: solid 1px #0d0d0d;
 }
 
-header nav .logo img {
-  width: 100%;
+header nav .topnav .logo img {
+  width: 60px;
+  margin: 5px;
+}
+
+header nav .topnav img {
+  width: 60px;
+  margin: 5px;
 }
 
 header nav ul li {
   font-size: 1.5rem;
-  margin: 1em 0;
+  padding: 1em 0;
   list-style: none;
 }
 
-header nav ul li span {
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a span {
+  display: inline-block;
   width: 70px;
   text-align: center;
 }
 
-header nav ul li ul {
+header nav ul li:hover {
+  background-color: #569898;
+}
+
+header nav ul .sub-ul {
   background-color: #282c35;
-}
-
-header nav ul li ul li {
-  margin-left: 70px;
-  justify-items: center;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* MAIN CONTENT*/
