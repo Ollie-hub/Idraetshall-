@@ -5,10 +5,10 @@ let images = [] // Variable som heder images med et tomt array
 let time = 3000; // Variable time som styrer hvornår bilderne skiftes
 
 // Image liste
-images[0] = '/media/image1.jpg';
-images[1] = '/media/image2.jpg';
-images[2] = '/media/image3.jpg'; 
-images[3] = '/media/image4.jpg'; 
+images[0] = '/img/image1.jpg';
+images[1] = '/img/image2.jpg';
+images[2] = '/img/image3.jpg'; 
+images[3] = '/img/image4.jpg'; 
  
 // Skift Image
 function changeImg(){
