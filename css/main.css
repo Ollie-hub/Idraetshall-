@@ -5,6 +5,48 @@
 }
 
 /* NAV BAR*/
+header nav {
+  height: 100vh;
+  background-color: #0d0d0d;
+  width: 250px;
+}
+
+header nav .logo {
+  width: 70px;
+  height: 70px;
+  background-color: #569898;
+  border-right: solid 1px #282c35;
+}
+
+header nav .logo img {
+  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.5rem;
+  margin: 1em 0;
+  list-style: none;
+}
+
+header nav ul li span {
+  width: 70px;
+  text-align: center;
+}
+
+header nav ul li ul {
+  background-color: #282c35;
+}
+
+header nav ul li ul li {
+  margin-left: 70px;
+  justify-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* MAIN CONTENT*/
 /* FOOTER */
 /* MOBILE/TABLET */
