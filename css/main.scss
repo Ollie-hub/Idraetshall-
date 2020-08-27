@@ -1,59 +1,38 @@
-.container{
+.container {
     height: 1500px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    }
-    #hp  {
+}
+
+.box1 {
+        background-color: white;
+        width: 70%;
+        height: 90vh;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+        font-family: 'segoe UI Historic';
+        font-size: 17px;
+        border-radius: 10px;
+        position: relative;
+        right: -15vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+}
+#hp  {
        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
        border-radius: 10px;
-       width: 300px;
-       height: 300px;
+       width: 80%;
+       height: 35%;
+       margin-bottom: 480px;
+       margin-left: 40px;
+}
     
-        }
-        .Hallen {
-            background-color: white;
-            width: 70vw;
-            height: 450px;
-            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-            font-family: 'segoe UI Historic';
-            font-size: 17px;
-            border-radius: 10px;
-            position: relative;
-            right: 10vw;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            border-left: 1.5px solid red;
-            border-bottom: 1.5px solid red;
-    
-          }
-    
-          .Hallen2 {
-            background-color: white;
-            width: 70vw;
-            height: 450px;
-            box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.26);
-            font-family: 'segoe UI Historic';
-            font-size: 17px;
-           border-radius: 10px;
-           position: relative;
-           left: 10vw;
-           display: flex;
-           flex-direction: row-reverse;
-           align-items: center;
-           justify-content: space-evenly;
-           border-left: 1.5px solid red;
-           border-bottom: 1.5px solid red
-    
-    
-    
-          }
-    #hp2  {
-     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.26);
-     border-radius: 10px;
-     width: 300px;
-     height: 300px;
-    }
+p    {
+   margin-right: 50px; 
+   text-align: left;
+   word-wrap: break-word;
+   white-space: initial;
+}
