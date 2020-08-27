@@ -7,6 +7,66 @@
 /* NAV BAR*/
 /* MAIN CONTENT*/
 /* ANDREAS */
+.container {
+  height: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.box1 {
+  background-color: white;
+  width: 70%;
+  height: 90vh;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'segoe UI Historic';
+  font-size: 17px;
+  border-radius: 10px;
+  position: relative;
+  right: -15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#hp {
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 80%;
+  height: 35%;
+  margin-bottom: 480px;
+  margin-left: 40px;
+}
+
+p {
+  margin-right: 50px;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: initial;
+}
+
 /* OLIVER */
 .img-slide {
   width: 100%;
