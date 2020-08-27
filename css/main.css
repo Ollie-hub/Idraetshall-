@@ -25,7 +25,7 @@
   font-size: 17px;
   border-radius: 10px;
   position: relative;
-  right: -15vw;
+  right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
