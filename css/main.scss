@@ -14,7 +14,7 @@ header{
     nav{
         height: 100vh;
         background-color: $black;
-        width: 250px;
+        width: 70px;
         .topnav{
             background-color: $dark;
             .logo{
@@ -37,6 +37,7 @@ header{
                 font-size: 1.5rem;
                 padding: 1em 0;
                 list-style: none;
+                position: relative;
                 a{
                     color: #fff;
                     text-decoration: none;
@@ -48,12 +49,22 @@ header{
                 }
             }
             .fa-angle-right{
+                position: absolute;
+                right: 15px;
+                top: 30px;
+            }
+            .fa-angle-right:hover{
+                transform: rotate(90deg);
+            }
+            .fa-angle-right:hover .sub-ul{
+                display: unset;
             }
             li:hover{
                 background-color: $main-color;
             }
         .sub-ul{
             background-color: $dark;
+            display: none;
         }      
         }
     }
