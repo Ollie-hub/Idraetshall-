@@ -68,6 +68,14 @@ p {
 }
 
 /* OLIVER */
+.logo-text {
+  position: absolute;
+  z-index: 100;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20%;
+}
+
 .img-slide {
   width: 100%;
   height: 100vh;
@@ -151,4 +159,44 @@ p {
 
 /* FOOTER */
 /* MOBILE/TABLET */
+@media only screen and (max-width: 600px) {
+  .img-slide {
+    width: 100%;
+    height: 50vh;
+  }
+  .activity-images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .activities-container {
+    position: relative;
+    width: 230px;
+    height: 180px;
+    margin-top: 10%;
+  }
+  .text {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .head-text {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
