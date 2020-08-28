@@ -1,14 +1,12 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* body grid*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* body grid*/
 body {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header main" "header footer";
+      grid-template-areas: "header main"
+ "header footer";
 }
 
 /* NAV BAR*/
@@ -278,5 +276,15 @@ footer {
   grid-area: footer;
 }
 
+e: 35px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* FOOTER */
 /* MOBILE/TABLET */
 /*# sourceMappingURL=main.css.map */
