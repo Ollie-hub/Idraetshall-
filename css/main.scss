@@ -9,9 +9,80 @@ $dark: #282c35;
 $light: #f2f2f2;
 $black: #0d0d0d;
 $white: #fff;
+/* body grid*/
+body{
+    display: grid;
+    grid-template-areas:
+    "header main"
+    "header footer";
+}
+
 /* NAV BAR*/
+header{
+    height: 100%;
+    background-color: $black;
+    grid-area: header;
+    nav{
+        width: 70px;
+        .topnav{
+            background-color: $dark;
+            .logo{
+                width: 70px;
+                height: 70px;
+                background-color: $main-color;
+                img{
+                    width: 60px;
+                    margin: 5px;
+                }
+            }
+            img{
+                width: 60px;
+                margin: 5px;
+            }
+        }
+        ul{
+            li{
+                font-size: 1.5rem;
+                padding: 1em 0;
+                list-style: none;
+                position: relative;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    span{
+                        display: inline-block;
+                        width: 70px;
+                        text-align: center;
+                    }
+                }
+            }
+            .fa-angle-right{
+                position: absolute;
+                right: 15px;
+                top: 30px;
+            }
+            .fa-angle-right:hover{
+                transform: rotate(90deg);
+            }
+            .fa-angle-right:hover .sub-ul{
+                display: unset;
+            }
+            li:hover{
+                background-color: $main-color;
+            }
+        .sub-ul{
+            background-color: $dark;
+            display: none;
+        }      
+        }
+    }
+}
+
 
 /* MAIN CONTENT*/
+main{
+    grid-area: main;
+}
 
 /* ANDREAS */
 .container {
@@ -139,6 +210,8 @@ p    {
   }
 
 /* FOOTER */
-
+footer{
+    grid-area: footer;
+}
 /* MOBILE/TABLET */
 
