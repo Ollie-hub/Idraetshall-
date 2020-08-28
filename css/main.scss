@@ -22,7 +22,10 @@ header{
     height: 100%;
     background-color: $black;
     grid-area: header;
+
     nav{
+        position: sticky;
+        top: 0;
         width: 70px;
         .topnav{
             background-color: $dark;
