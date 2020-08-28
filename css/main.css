@@ -93,16 +93,14 @@ p {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 15vw;
 }
 
 .activities-container {
   position: relative;
   width: 500px;
   height: 350px;
-  margin: 10%;
+  margin-top: 10%;
 }
 
 .image {

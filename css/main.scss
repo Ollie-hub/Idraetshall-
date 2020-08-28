@@ -81,14 +81,14 @@ p    {
 .activity-images {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
+    margin-left: 15vw;
 }
 
 .activities-container {
     position: relative;
     width: 500px;
     height: 350px;
-    margin: 10%;
+    margin-top: 10%;
   }
   
   .image {
