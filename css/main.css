@@ -12,84 +12,6 @@ body {
 }
 
 /* NAV BAR*/
-header {
-  height: 100%;
-  background-color: #0d0d0d;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: header;
-}
-
-header nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 70px;
-}
-
-header nav .topnav {
-  background-color: #282c35;
-}
-
-header nav .topnav .logo {
-  width: 70px;
-  height: 70px;
-  background-color: #569898;
-}
-
-header nav .topnav .logo img {
-  width: 60px;
-  margin: 5px;
-}
-
-header nav .topnav img {
-  width: 60px;
-  margin: 5px;
-}
-
-header nav ul li {
-  font-size: 1.5rem;
-  padding: 1em 0;
-  list-style: none;
-  position: relative;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header nav ul li a span {
-  display: inline-block;
-  width: 70px;
-  text-align: center;
-}
-
-header nav ul .fa-angle-right {
-  position: absolute;
-  right: 15px;
-  top: 30px;
-}
-
-header nav ul .fa-angle-right:hover {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-header nav ul .fa-angle-right:hover .sub-ul {
-  display: unset;
-}
-
-header nav ul li:hover {
-  background-color: #569898;
-}
-
-header nav ul .sub-ul {
-  background-color: #282c35;
-  display: none;
-}
-
 /* MAIN CONTENT*/
 main {
   -ms-grid-row: 1;
@@ -147,7 +69,7 @@ main {
   margin-left: 40px;
 }
 
-p {
+.Andreas_fix {
   margin-right: 50px;
   text-align: left;
   word-wrap: break-word;
