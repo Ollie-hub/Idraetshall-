@@ -74,12 +74,6 @@ nav ul li ul {
   display: block;
 }
 
-[id^=btn]:checked + .fa-caret-down {
-  background-color: red;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
 input {
   display: none;
 }
