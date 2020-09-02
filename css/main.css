@@ -36,11 +36,18 @@ main {
 }
 
 .box1 {
+  background-color: #fff;
+  width: 70%;
+  height: 90vh;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  right: auto;
   background-color: white;
   width: 80%;
   height: 50vh;
-  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
   font-family: 'segoe UI Historic';
   border-radius: 10px;
   position: relative;
@@ -63,13 +70,23 @@ main {
 #hp {
   -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 480px;
   border-radius: 10px;
   width: 80%;
-  height: 100%;
   margin-left: 40px;
 }
 
 .Andreas_fix {
+  margin-right: 50px;
+  margin-top: 200px;
+  text-align: center;
+  word-break: break-all;
+  line-height: 2;
+  text-transform: uppercase;
+  font-size: 16.1px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  white-space: pre-line;
+  width: 100%;
   margin-right: 50px;
   text-align: left;
   word-wrap: break-word;
@@ -86,26 +103,121 @@ main {
   font-size: xx-large;
 }
 
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 200px;
-  background-color: #f1f1f1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1px;
+.price-table-wrapper {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.flex-container > div {
-  background-color: #282c35;
+.price-table-wrapper .featured-table {
+  -webkit-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+}
+
+.price-table-wrapper .pricing-table {
+  display: inline-block;
+  border: 1px solid #282c35;
+  border-radius: 10px;
+  background: #282c35;
+  margin: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.price-table-wrapper .pricing-table__header {
+  padding: 20px;
+  font-size: 20px;
+  color: #909090;
+  background: #E0E0E0;
+}
+
+.price-table-wrapper .pricing-table__price {
+  color: #66CCCC;
+  padding: 20px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.price-table-wrapper .pricing-table__button {
+  display: block;
+  background: #66CCCC;
+  text-decoration: none;
+  padding: 20px;
   color: white;
-  margin: 1px;
-  width: 100px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.price-table-wrapper .pricing-table__button:before {
+  position: absolute;
+  left: -20%;
+  top: -10%;
+  content: '';
+  width: 60%;
+  height: 220%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  background: white;
+  opacity: .3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.price-table-wrapper .pricing-table__button:after {
+  position: absolute;
+  content: '>';
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  padding: 15px;
+  padding-right: 40px;
+  color: white;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.price-table-wrapper .pricing-table__button:hover {
+  background: black;
+}
+
+.price-table-wrapper .pricing-table__list {
+  padding: 20px;
+  color: #A0A0A0;
+}
+
+.price-table-wrapper .pricing-table__list li {
+  padding: 15px;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.price-table-wrapper .pricing-table__list li:last-child {
+  border: none;
+}
+
+.price-table-wrapper .pricing-table:hover {
+  -webkit-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+}
+
+.price-table-wrapper .pricing-table:hover .pricing-table__button {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.price-table-wrapper .pricing-table:hover .pricing-table__button:before {
+  top: -80%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 100%;
+}
+
+.price-table-wrapper .pricing-table:hover .pricing-table__button:after {
+  opacity: 1;
+  padding-right: 15px;
 }
 
 /* OLIVER */
