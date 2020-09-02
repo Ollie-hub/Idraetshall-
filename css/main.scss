@@ -87,6 +87,7 @@ p    {
    text-transform: uppercase;       
    font-size: 16,89px;
 }
+}
 .hal{
   text-align: center;
   width:100%;
@@ -222,7 +223,7 @@ p    {
 
 .activity-article {
     //Position
-    height: 100vh;
+    height: 900px;
     width: 100%;
     justify-content: center;
     //Style
@@ -287,6 +288,36 @@ p    {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+/* BOOKING SECTION */
+
+.booking-section {
+  display: grid;
+  grid-template-rows: auto auto; 
+}
+
+.activity-info-article {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 500px;
+  background-color: green;
+  margin-left: 100px;
+}
+
+.activity-info-section {
+  display: grid;
+  
+  height: 300px;
+  width: 300px;
+  background-color: indianred;
+}
+
+.booking-form {
+  display: grid;
+  height: 500px;
+  margin-left: 100px;
+  background-color: orange;
+}
+
 
 /* FOOTER */
 footer{
@@ -339,4 +370,5 @@ footer{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
 }
