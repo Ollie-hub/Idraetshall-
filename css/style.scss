@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Segoe UI';
+}
+
+
+$main-color: #569898;
+$dark: #282c35;
+$light: #f2f2f2;
+$black: #0d0d0d;
+$white: #fff;
+
+
+nav{
+    background-color: $black;
+    width: 4,375rem;
+    height: 100vh;
+    transition: width 200ms ease;
+    position: fixed;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    background-color: $main-color;
+}
+
+.logo img{
+    width: 100%;
+}
+
+li{
+    line-height: 40px;
+    width: 100%;
+    border-top: 1px solid $dark;
+}
+
+li a:hover,
+li label:hover{
+  background-color: $main-color;
+}
+
+.slimbar-i, .slimbar-p{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+.fa-caret-down{
+    text-align: center;
+    display: none;
+}
+
+span{
+    display: none;
+    width: 150px;
+}
+
+.first, a{
+    color: $white;
+    cursor: pointer;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav ul li ul{
+    display: none;
+    background-color: $dark;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+[id^=btn]:checked + .fa-caret-down{
+    background-color: red;
+    transform: rotate(-90deg);
+}
+
+input{
+    display: none;
+}
+
+/** fold **/
+
+nav:hover{
+    width: 15.625rem;
+    display: inline-block;
+    span{
+        display: inline-block;
+    }
+    .slimbar-p{
+        opacity: 0;
+    }
+    .fa-caret-down{
+        display: inline-block;
+    }
+}

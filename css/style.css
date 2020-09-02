@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Segoe UI';
+}
+
+nav {
+  background-color: #0d0d0d;
+  width: 4,375rem;
+  height: 100vh;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+  position: fixed;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+  background-color: #569898;
+}
+
+.logo img {
+  width: 100%;
+}
+
+li {
+  line-height: 40px;
+  width: 100%;
+  border-top: 1px solid #282c35;
+}
+
+li a:hover,
+li label:hover {
+  background-color: #569898;
+}
+
+.slimbar-i, .slimbar-p {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+
+.fa-caret-down {
+  text-align: center;
+  display: none;
+}
+
+span {
+  display: none;
+  width: 150px;
+}
+
+.first, a {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav ul li ul {
+  display: none;
+  background-color: #282c35;
+}
+
+[id^=btn]:checked + ul {
+  display: block;
+}
+
+[id^=btn]:checked + .fa-caret-down {
+  background-color: red;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+input {
+  display: none;
+}
+
+/** fold **/
+nav:hover {
+  width: 15.625rem;
+  display: inline-block;
+}
+
+nav:hover span {
+  display: inline-block;
+}
+
+nav:hover .slimbar-p {
+  opacity: 0;
+}
+
+nav:hover .fa-caret-down {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
