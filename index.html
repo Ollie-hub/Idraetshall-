@@ -9,12 +9,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <label for="btn-fold" class="fold">
-                    <img src="img/logo.png" alt="">
-                </label>
-                <input type="checkbox" id="btn-fold">
+        <nav id="nav">
+            <div class="nav-header">
+                <div class="logo">
+                    <label for="btn-fold" class="fold">
+                        <img src="img/logo.png" alt="logo">
+                    </label>
+                    <input type="checkbox" id="btn-fold" onclick="navfold()">
+                </div>
+                <div class="logo-extension">
+                    <img src="img/logo.png" alt="logo extension">
+                </div>
             </div>
             <ul>
                 <li><a href=""><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
@@ -35,5 +40,6 @@
             </ul>
         </nav>
     </header>
+    <script src="js/sidenav.js"></script>
 </body>
 </html>

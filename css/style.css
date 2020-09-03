@@ -23,18 +23,33 @@ header nav {
   position: fixed;
 }
 
-header nav .logo {
+header nav .nav-header {
+  width: 100%;
+}
+
+header nav .nav-header .logo {
+  display: inline-block;
   height: 70px;
   width: 70px;
   background-color: #569898;
 }
 
-header nav .logo img {
-  width: 100%;
+header nav .nav-header .logo label img {
+  width: 70px;
+  height: 70px;
 }
 
-header nav .logo #btn-fold {
+header nav .nav-header .logo #btn-fold {
   display: none;
+}
+
+header nav .nav-header .logo-extension {
+  display: none;
+}
+
+header nav .nav-header .logo-extension img {
+  width: 70px;
+  margin: 0 52px 0 52px;
 }
 
 header nav li {
@@ -86,20 +101,24 @@ header nav ul li ul {
   background-color: #282c35;
 }
 
-header nav:hover {
+header .nav-big {
   width: 15.625rem;
   display: inline-block;
 }
 
-header nav:hover span {
+header .nav-big span {
   display: inline-block;
 }
 
-header nav:hover .slimbar-p {
+header .nav-big .slimbar-p {
   opacity: 0;
 }
 
-header nav:hover .fa-caret-down {
+header .nav-big .fa-caret-down {
+  display: inline-block;
+}
+
+header .nav-big .nav-header .logo-extension {
   display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
