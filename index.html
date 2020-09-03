@@ -13,38 +13,41 @@
 
 <!-------------------------- NAV BAR -------------------------->
 <header>
-  <nav>
-      <div class="logo">
-          <label for="btn-fold" class="fold">
-              <img src="img/logo.png" alt="">
-          </label>
-          <input class="nav-input" type="checkbox" id="btn-fold">
-      </div>
-      <ul>
-          <li><a href=""><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
-          <li><a href=""><i class="slimbar-i fas fa-users"></i><span>Medlemskap</span></a></li>
-          <li>
-              <label for="btn-1" class="first"><i class="slimbar-i fas fa-running"></i><span>Aktiviteter</span>
-                  <i class="fas fa-caret-down"></i>
-              </label>
-              <input class="nav-input" type="checkbox" id="btn-1">
-              <ul>
-                  <li><a href=""><p class="slimbar-p">Ba</p><span>Badminton</span></a></li>
-                  <li><a href=""><p class="slimbar-p">Fo</p><span>Fodbold</span></a></li>
-                  <li><a href=""><p class="slimbar-p">Hå</p><span>Håndbold</span></a></li>
-                  <li><a href=""><p class="slimbar-p">Te</p><span>Tennis</span></a></li>
-              </ul>
-          </li>
-          <li><a href=""><i class="slimbar-i fas fa-address-card"></i><span>Kontakt</span></a></li>
-      </ul>
-  </nav>
+    <nav id="nav">
+        <div class="nav-header">
+            <div class="logo">
+                <label for="btn-fold" class="fold">
+                    <img src="img/logo.png" alt="logo">
+                </label>
+                <input type="checkbox" id="btn-fold" onclick="navfold()">
+            </div>
+            <div class="logo-extension">
+                <img src="img/logo.png" alt="logo extension">
+            </div>
+        </div>
+        <ul>
+            <li><a href=""><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
+            <li><a href=""><i class="slimbar-i fas fa-users"></i><span>Medlemskap</span></a></li>
+            <li>
+                <label for="btn-1" class="first"><i class="slimbar-i fas fa-running"></i><span>Aktiviteter</span>
+                    <i class="fas fa-caret-down"></i>
+                </label>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href=""><p class="slimbar-p">Ba</p><span>Badminton</span></a></li>
+                    <li><a href=""><p class="slimbar-p">Fo</p><span>Fodbold</span></a></li>
+                    <li><a href=""><p class="slimbar-p">Hå</p><span>Håndbold</span></a></li>
+                    <li><a href=""><p class="slimbar-p">Te</p><span>Tennis</span></a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class="slimbar-i fas fa-address-card"></i><span>Kontakt</span></a></li>
+        </ul>
+    </nav>
 </header>
-
 <!-------------------------- MAIN CONTENT -------------------------->
 <main>
     <!-------------------------- HERO SECTION -------------------------->
-    <section class="hero">
-        
+    <section class="hero"> 
         <img name="slide" class="img-slide">
     </section>
 
@@ -53,22 +56,23 @@
       
     <!-------------------------- ABOUT SECTION -------------------------->
     <section class="container">
-        <div class="box1">
+        <article class="box1">
           <div>
             <img src="/Img/Hal_03.jpg" alt="" class="hp"/>
           </div>
           <div class="">
             <h2 class="hal">Om Hallen</h2>
-         <p class="Andreas_fix"> 
-            Hallen er paraplyorganisation for idrætsforeninger i Himmerland med ialt ca. 8.000 medlemmer.
-            59 foreninger og tre landsdelsorganisationer med omkring 30 grupper tilsluttet.
-            De tilsluttede foreninger rækker lige fra store idrætsforeninger 
-            med op til 1.000 medlemmer til små foreninger i landsdelen med en snes medlemmer.
-            De nyindrettede haller tilbyder en bred vifte af aktiviteter inden for idræt og kultur.”</p> 
+            <p class="Andreas_fix"> 
+                Hallen er paraplyorganisation for idrætsforeninger i Himmerland med ialt ca. 8.000 medlemmer.
+                59 foreninger og tre landsdelsorganisationer med omkring 30 grupper tilsluttet.
+                De tilsluttede foreninger rækker lige fra store idrætsforeninger 
+                med op til 1.000 medlemmer til små foreninger i landsdelen med en snes medlemmer.
+                De nyindrettede haller tilbyder en bred vifte af aktiviteter inden for idræt og kultur.”
+            </p> 
           </div>
             
-        </div>
-</section>
+        </article>
+    </section>
     <!-------------------------- ACTIVITIES SECTION -------------------------->
         <article class="activity-article">
         <section class="activity-images">
@@ -226,12 +230,7 @@
 
 
 <!-- FOOTER -->
-</main>
- 
-
-
-
-<script src="/js/main.js"></script>
-    
+    <script src="/js/main.js"></script>
+    <script src="js/sidenav.js"></script>
 </body>
 </html>

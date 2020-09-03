@@ -12,87 +12,97 @@ $light: #f2f2f2;
 $black: #0d0d0d;
 $white: #fff;
 
-
-nav{
-    z-index: 10;
-    background-color: $black;
-    width: 4,375rem;
-    height: 100vh;
-    transition: width 200ms ease;
-    position: fixed;
-}
-
-.logo{
-    height: 70px;
-    width: 70px;
-    background-color: $main-color;
-}
-
-.logo img{
-    width: 100%;
-}
-
-li{
-    line-height: 40px;
-    width: 100%;
-    border-top: 1px solid $dark;
-}
-
-li a:hover,
-li label:hover{
-  background-color: $main-color;
-}
-
-.slimbar-i, .slimbar-p{
-    display: inline-block;
-    width: 70px;
-    text-align: center;
-}
-
-.fa-caret-down{
-    text-align: center;
-    display: none;
-}
-
-span{
-    display: none;
-    width: 150px;
-}
-
-.first, a{
-    color: $white;
-    cursor: pointer;
-    display: block;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-
-nav ul li ul{
-    display: none;
-    background-color: $dark;
-}
-
-[id^=btn]:checked + ul{
-    display: block;
-}
-
-.nav-input{
-    display: none;
-}
-
-/** fold **/
-
-nav:hover{
-    width: 15.625rem;
-    display: inline-block;
-    span{
-        display: inline-block;
+header{
+    nav{
+        background-color: $black;
+        width: 4,375rem; //det samme som 70px
+        height: 100vh;
+        transition: width 200ms ease;
+        position: fixed;
+        .nav-header{
+            width: 100%;
+            .logo{
+                display: inline-block;
+                height: 70px;
+                width: 70px;
+                background-color: $main-color;
+                label{
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                #btn-fold{
+                    display: none;
+                }
+            }
+            .logo-extension{
+                display: none;
+                img{
+                    width: 70px;
+                    margin: 0 52px 0 52px;
+                }
+            }
+        }
+        li{
+            line-height: 40px;
+            width: 100%;
+            border-top: 1px solid $dark;
+            .slimbar-i, .slimbar-p{
+                display: inline-block;
+                width: 70px;
+                text-align: center;
+            }
+            span{
+                display: none;
+                width: 150px;
+            }
+            a:hover,
+            label:hover{
+                background-color: $main-color;
+            }
+            .fa-caret-down{
+                text-align: center;
+                display: none;
+            }
+            .first, a{
+                color: $white;
+                cursor: pointer;
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                font-size: 1.3rem;
+            }
+            [id^=btn]{
+                display: none;
+            }
+            
+            [id^=btn]:checked + ul{
+                display: block;
+            }
+        }
+        ul li ul{
+            display: none;
+            background-color: $dark;
+        }
     }
-    .slimbar-p{
-        opacity: 0;
-    }
-    .fa-caret-down{
+    /** fold **/
+    .nav-big{
+        width: 15.625rem; // det samme som 250px
         display: inline-block;
+        span{
+            display: inline-block;
+        }
+        .slimbar-p{
+            opacity: 0;
+        }
+        .fa-caret-down{
+            display: inline-block;
+        }
+        .nav-header{
+            .logo-extension{
+                display: inline-block;
+            }
+        }
     }
 }
