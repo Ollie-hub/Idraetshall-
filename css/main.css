@@ -286,6 +286,10 @@ body {
       flex-wrap: wrap;
 }
 
+.description {
+  background-color: #569898;
+}
+
 .description, .form {
   width: 40%;
   padding: 5%;
@@ -293,7 +297,7 @@ body {
 
 .description h1 {
   text-transform: uppercase;
-  color: #808080;
+  color: #282c35;
   font-weight: 400;
   margin-top: 0;
 }
@@ -304,7 +308,7 @@ body {
 }
 
 .description p {
-  color: #808080;
+  color: #282c35;
   font-size: 14px;
   line-height: 22px;
 }
