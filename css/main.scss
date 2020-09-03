@@ -23,7 +23,7 @@ body{
 
 
 /* ANDREAS */
-
+//selve siden//
 .container {  
     height: 100vh;
     display: flex;
@@ -32,20 +32,14 @@ body{
     justify-content: space-evenly;
     background-color: $white;
 }
-
+//boxen udenom text og billede//
 .box1 {
         background-color: $white;
-        width: 70%;
-        height: 90vh;
-        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        position: relative;
         right: auto;
         background-color: white;
         width: 70%;
         height: 50vh;
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-        font-family: 'segoe UI Historic';
         border-radius: 10px;
         position: relative;
         margin: auto;
@@ -54,24 +48,16 @@ body{
         align-items: center;
         justify-content: space-evenly;
 }
-#hp  {
+//billedet//
+.hp  {
        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
        border-radius: 10px;
        width: 80%;
        margin-left: 40px;
 }
-
+//texten//
   .Andreas_fix p {
-   margin-right: 50px;
    margin-top: 200px; 
-   text-align: center;
-   word-break: break-all;
-   line-height: 2;
-   text-transform: uppercase;
-   font-size: 16.1px;
-   font-family:Tahoma, Geneva, Verdana, sans-serif;
-   white-space: pre-line;
-  width: 100%;
    margin-right: 50px; 
    text-align: left;
    word-wrap: break-word;
@@ -81,20 +67,18 @@ body{
    text-transform: uppercase;       
    font-size: 16,89px;
 }
+//overskrift//
 .hal{
   text-align: center;
   width:100%;
   font-size: xx-large;
 }
+//selve medlemskabskassernes klasse//
 .price-table-wrapper{
   font-family: 'Lato', sans-serif;
   text-align: center;
   margin-top: 30px;
-  
-  .featured-table{
-    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
-  }
-  
+  // kasserne//
   .pricing-table{
     display: inline-block;
     border: 1px solid $dark;
@@ -102,13 +86,14 @@ body{
     background: $dark;
     margin: 20px;
     transition: all 0.3s ease-in-out;
-    
+    //oversriften//
     &__header{
       padding: 20px;
       font-size: 20px;
       color: #909090 ;
       background: #E0E0E0;
     }
+    //prisen//
     &__price{
       color: #66CCCC;
       padding: 20px;
@@ -116,6 +101,7 @@ body{
       font-size: 40px;
       font-weight: 500;
     }
+    //kanppen//
     &__button{
       display: block;
       background: #66CCCC;
@@ -126,19 +112,8 @@ body{
       overflow: hidden;
       transition: all 0.3s ease-in-out;
       
-      &:before{
-        position: absolute;
-        left: -20%;
-        top: -10%;
-        content: '';
-        width: 60%;
-        height: 220%;
-        transform: rotate(-30deg);
-        background: white;
-        opacity: .3;
-        transition: all 0.3s ease-in-out;
-      }
-      
+
+      //styr hvordan kasserne indvendig//
        &:after{
           position: absolute;
           content: '>';
@@ -151,11 +126,12 @@ body{
           opacity: 0;
          transition: all 0.3s ease-in-out;
         }
-      
+      //giver farve når du køre over kanppen//
       &:hover{
         background: black;
       }
     }
+    //listen med ting//
     &__list{
       padding: 20px;
       color: #A0A0A0;
@@ -168,10 +144,10 @@ body{
         }
       }
     }
-    
+    //giver en skygge til kasserne 
     &:hover{
       box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
-    
+    //giver kanppen den effekt den har//
       .pricing-table__button{
         padding-left: 0;
         padding-right: 35px;
