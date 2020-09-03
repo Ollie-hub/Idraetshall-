@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -125,10 +124,81 @@
 </main>
 <!-- FOOTER -->
 
-  <footer>
+<footer>
 
+
+  <!-- icons and social -->
+  <div class="icons--container">
+      <div class="icons--logo">
+          <img src="/Img/logo.png" alt="un">
+      </div>
+
+      <div class="icons--social" id="pc">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="img/facebook.png" alt="facebook">
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="img/twitter.png" alt="twitter">
+          </a>
+      </div>
+  </div>
+
+<div class="mobile--wrapper">
+
+
+  <!-- anchors -->
+  <div class="anchor--container">
+      <div class="links">
+          <p>Links:</p>
+          <a href="#">Extern Link One</a>
+          <a href="#">Extern Link Two</a>
+          <a href="#">Extern Link Three</a>
+          <a href="#">Extern Link Four</a>
+          <a href="#">Extern Link Five</a>
+      </div>
+      
+  </div>
+  
+
+  <!-- FORM -->
+  <div class="form--container">
+    <!-- form title -->
+    <p class="form--title">Ja tak!<span class="small"> Jeg vil gerne:</span></p>
+
+   <form>
+
+
+     <!-- form name, phone and email  -->
+     <div class="form--input--container">
+      <div class="">
+          <label for="fname">Fulde Navn</label>
+          <input type="text" id="fname" name="fname" required>
+      </div>  
+
+      <div class="Contact">
+          <label for="email">E Mail adresse</label>
+          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+      </div>
+     
+      <div class="input-btn">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Send">
+      </div>
+      
+     </div>
+     <div class="icons--social mobile">
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+          <img src="/Img/facebook-flat-vector-logo-400x400-e1505160322402.jpg" alt="facebook">
+      </a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+          <img src="img/twitter.png" alt="twitter">
+      </a>
+  </div>
+   </form>
+  </div>
+</div>
+  
 </footer>
-
 
 
 
