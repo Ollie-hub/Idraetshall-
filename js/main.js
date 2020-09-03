@@ -25,3 +25,5 @@ function changeImg(){
 
 window.onload = changeImg; 
 
+$(".footer-col-list a[href='"+window.location.pathname+"']").addClass("active");
+$(".footer-col-list a[href='"+window.location.pathname+"']").parentsUntil( ".footer-col-list", "li").addClass("active");
