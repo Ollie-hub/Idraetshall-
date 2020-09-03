@@ -27,99 +27,99 @@ body{
 
 /* NAV BAR */
 header{ // af jannick nielsen :P
-  grid-area: header;
-  nav{
-      background-color: $black;
-      width: 4,375rem; //det samme som 70px
-      height: 100vh;
-      transition: width 200ms ease;
-      position: fixed;
-      .nav-header{
-          width: 100%;
-          .logo{
-              display: inline-block;
-              height: 70px;
-              width: 70px;
-              background-color: $main-color;
-              label{
-                  img{
-                      width: 70px;
-                      height: 70px;
-                  }
-              }
-              #btn-fold{
-                  display: none;
-              }
-          }
-          .logo-extension{
-              display: none;
-              img{
-                  width: 70px;
-                  margin: 0 52px 0 52px;
-              }
-          }
-      }
-      li{
-          line-height: 40px;
-          width: 100%;
-          border-top: 1px solid $dark;
-          .slimbar-i, .slimbar-p{
-              display: inline-block;
-              width: 70px;
-              text-align: center;
-          }
-          span{
-              display: none;
-              width: 150px;
-          }
-          a:hover,
-          label:hover{
-              background-color: $main-color;
-          }
-          .fa-caret-down{
-              text-align: center;
-              display: none;
-          }
-          .first, a{
-              color: $white;
-              cursor: pointer;
-              display: block;
-              padding: 10px 0;
-              text-decoration: none;
-              font-size: 1.3rem;
-          }
-          [id^=btn]{
-              display: none;
-          }
+    grid-area: header;
+    nav{
+        background-color: $black;
+        width: 4,375rem; //det samme som 70px
+        height: 100vh;
+        transition: width 200ms ease;
+        position: fixed;
+        .nav-header{
+            width: 100%;
+            .logo{
+                display: inline-block;
+                height: 70px;
+                width: 70px;
+                background-color: $main-color;
+                label{
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                #btn-fold{
+                    display: none;
+                }
+            }
+            .logo-extension{
+                display: none;
+                img{
+                    width: 70px;
+                    margin: 0 52px 0 52px;
+                }
+            }
+        }
+        li{
+            line-height: 40px;
+            width: 100%;
+            border-top: 1px solid $dark;
+            .slimbar-i, .slimbar-p{
+                display: inline-block;
+                width: 70px;
+                text-align: center;
+            }
+            span{
+                display: none;
+                width: 150px;
+            }
+            a:hover,
+            label:hover{
+                background-color: $main-color;
+            }
+            .fa-caret-down{
+                text-align: center;
+                display: none;
+            }
+            .first, a{
+                color: $white;
+                cursor: pointer;
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                font-size: 1.3rem;
+            }
+            [id^=btn]{
+                display: none;
+            }
           
-          [id^=btn]:checked + ul{
-              display: block;
-          }
-      }
-      ul li ul{
-          display: none;
-          background-color: $dark;
-      }
-  }
-  /** fold **/
-  .nav-big{ // .js class
-      width: 15.625rem; // det samme som 250px
-      display: inline-block;
-      span{
-          display: inline-block;
-      }
-      .slimbar-p{
-          opacity: 0;
-      }
-      .fa-caret-down{
-          display: inline-block;
-      }
-      .nav-header{
-          .logo-extension{
-              display: inline-block;
-          }
-      }
-  }
+            [id^=btn]:checked + ul{
+                display: block;
+            }
+        }
+        ul li ul{
+            display: none;
+            background-color: $dark;
+        }
+    }
+    /** fold **/
+    .nav-big{ // .js class
+        width: 15.625rem; // det samme som 250px
+        display: inline-block;
+        span{
+            display: inline-block;
+        }
+        .slimbar-p{
+            opacity: 0;
+        }
+        .fa-caret-down{
+            display: inline-block;
+        }
+        .nav-header{
+            .logo-extension{
+                display: inline-block;
+            }
+        }
+    }
 } // nej du skal ikke coppypasta mig
 
 
@@ -128,392 +128,386 @@ header{ // af jannick nielsen :P
 
 /* MAIN CONTENT*/
 main{
-  grid-area: main;
+    grid-area: main;
 
-/* ANDREAS */
-//selve siden//
-.container {  
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: $white;
-}
-//boxen udenom text og billede//
-.box1 {
-      background-color: $white;
-      right: auto;
-      background-color: white;
-      width: 70%;
-      height: 50vh;
-      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      position: relative;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-}
-//billedet//
-.hp  {
-     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-     border-radius: 10px;
-     width: 80%;
-     margin-left: 40px;
-}
-//texten//
-.Andreas_fix p {
- margin-top: 200px; 
- margin-right: 50px; 
- text-align: left;
- word-wrap: break-word;
- white-space: pre;
- word-break: break-all;
- line-height: 2;
- text-transform: uppercase;       
- font-size: 16,89px;
-}
-//overskrift//
-.hal{
-text-align: center;
-width:100%;
-font-size: xx-large;
-}
-//selve medlemskabskassernes klasse//
-.price-table-wrapper{
-font-family: 'Lato', sans-serif;
-text-align: center;
-margin-top: 30px;
-// kasserne//
-.pricing-table{
-  display: inline-block;
-  border: 1px solid $dark;
-  border-radius: 10px;
-  background: $dark;
-  margin: 20px;
-  transition: all 0.3s ease-in-out;
-  //oversriften//
-  &__header{
-    padding: 20px;
-    font-size: 20px;
-    color: #909090 ;
-    background: #E0E0E0;
-  }
-  //prisen//
-  &__price{
-    color: #66CCCC;
-    padding: 20px;
-    margin: auto;
-    font-size: 40px;
-    font-weight: 500;
-  }
-  //kanppen//
-  &__button{
-    display: block;
-    background: #66CCCC;
-    text-decoration: none;
-    padding: 20px;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    
+    /* ANDREAS */
+    //selve siden//
+    .container{  
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $white;
+    }
+    //boxen udenom text og billede//
+    .box1{
+        background-color: $white;
+        right: auto;
+        background-color: white;
+        width: 70%;
+        height: 50vh;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    //billedet//
+    .hp{
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 40px;
+    }
+    //texten//
+    .Andreas_fix p{
+        margin-top: 200px; 
+        margin-right: 50px; 
+        text-align: left;
+        word-wrap: break-word;
+        white-space: pre;
+        word-break: break-all;
+        line-height: 2;
+        text-transform: uppercase;       
+        font-size: 16,89px;
+    }
+    //overskrift//
+    .hal{
+        text-align: center;
+        width:100%;
+        font-size: xx-large;
+    }
+    //selve medlemskabskassernes klasse//
+    .price-table-wrapper{
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    // kasserne//
+    .pricing-table{
+        display: inline-block;
+        border: 1px solid $dark;
+        border-radius: 10px;
+        background: $dark;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+        //oversriften//
+        &__header{
+            padding: 20px;
+            font-size: 20px;
+            color: #909090 ;
+            background: #E0E0E0;
+        }
+        //prisen//
+        &__price{
+            color: #66CCCC;
+            padding: 20px;
+            margin: auto;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        //kanppen//
+        &__button{
+            display: block;
+            background: #66CCCC;
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            //styr hvordan kasserne indvendig//
+            &:after{
+                position: absolute;
+                content: '>';
+                top: 0;
+                right: 0;
+                font-size: 25px;
+                padding: 15px;
+                padding-right: 40px;
+                color: white;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            //giver farve når du køre over kanppen//
+            &:hover{
+                background: black;
+            }
+        }
+        //listen med ting//
+        &__list{
+            padding: 20px;
+            color: #A0A0A0;
+            li{
+                padding: 15px;
+                border-bottom: 1px solid #C8C8C8 ;
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+        //giver en skygge til kasserne 
+        &:hover{
+            box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
+            //giver kanppen den effekt den har//
+            .pricing-table__button{
+                padding-left: 0;
+                padding-right: 35px;
+                &:before{
+                    top: -80%;
+                    transform: rotate(0deg);
+                    width: 100%;
+                }
+                &:after{
+                    opacity: 1;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    }
 
-    //styr hvordan kasserne indvendig//
-     &:after{
+
+    /* OLIVER */
+
+    .logo-text {
         position: absolute;
-        content: '>';
-        top: 0;
-        right: 0;
-        font-size: 25px;
-        padding: 15px;
-        padding-right: 40px;
-        color: white;
-        opacity: 0;
-       transition: all 0.3s ease-in-out;
-      }
-    //giver farve når du køre over kanppen//
-    &:hover{
-      background: black;
+        z-index: 100;
+        width: 40%;
+        margin-left: 30%;  
+        margin-top: 20%;
     }
-  }
-  //listen med ting//
-  &__list{
-    padding: 20px;
-    color: #A0A0A0;
-    li{
-      padding: 15px;
-      border-bottom: 1px solid #C8C8C8 ;
-      
-      &:last-child{
-        border: none;
-      }
-    }
-  }
-  //giver en skygge til kasserne 
-  &:hover{
-    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
-  //giver kanppen den effekt den har//
-    .pricing-table__button{
-      padding-left: 0;
-      padding-right: 35px;
-     &:before{
-        top: -80%;
-        transform: rotate(0deg);
+    .img-slide {
+        //Position
         width: 100%;
-      }
-      &:after{
-        opacity: 1;
-        padding-right: 15px;
-      }
+        height: 100vh;
     }
-  }
-}
-}
+    #activty-header {
+        //Postition
+        margin-left: 41%;
+        //Style
+        font-size: 4rem;
+        color: $white;
+    }
 
+    .activity-article {
+        //Position
+        height: 900px;
+        width: 100%;
+        justify-content: center;
+        //Style
+        background-color: $dark;
+    }
+    .activity-images {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 15vw;
+    }
 
-/* OLIVER */
+    .activities-container {
+        position: relative;
+        width: 500px;
+        height: 350px;
+        margin-top: 10%;
+    }
 
-.logo-text {
-position: absolute;
-z-index: 100;
-width: 40%;
-margin-left: 30%;  
-margin-top: 20%;
-}
-.img-slide {
-  //Position
-  width: 100%;
-  height: 100vh;
-}
-#activty-header {
-  //Postition
-  margin-left: 41%;
-  //Style
-  font-size: 4rem;
-  color: $white;
-}
+    .image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-.activity-article {
-  //Position
-  height: 900px;
-  width: 100%;
-  justify-content: center;
-  //Style
-  background-color: $dark;
-}
-.activity-images {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-left: 15vw;
-}
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: $main-color;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
 
-.activities-container {
-  position: relative;
-  width: 500px;
-  height: 350px;
-  margin-top: 10%;
-}
+    .activities-container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
 
-.image {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: $main-color;
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-}
+    .head-text {
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    /* BOOKING SECTION */
 
-.activities-container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.head-text {
-  color: white;
-  font-size: 35px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-/* BOOKING SECTION */
-
-.booking-container {
-width: 100%;
-margin: 0 auto;
-background-color: $main-color;
-}
-.book {
-  display: grid;
-  grid-template-areas: 
-  "description booking";
-}
-.description {
-  grid-area: description;
- padding: 2em;
-}
-.description, .form{
-}
-.description h1 {
-  text-transform: uppercase;
-  color: $dark;
-  font-weight: 400;
-  margin-top: 0;
-}
-.description h1 strong{
-font-weight: 700;
-color: #000;
-}
-.description p {
-  color: $dark;
-  font-size: 14px;
-  line-height: 22px;
-}
-.quote p {
-  font-style: italic;
-  padding: 2%;
-  border-left: 4px solid $main-color;
-}
-.description ul {
-  padding-left: 16px;
-  list-style: circle;
-}
-.description ul li{
-  margin: 10px 0;
-}
-.booking-form{
-  grid-area: booking;
-}
-.booking-form form{
-color: #808080;
-  display: flex;
-flex-wrap: wrap;
-}
-.booking-header {
-margin-bottom: 20px;
-color-interpolation-filters: $black;
-margin-left: 5%;
-margin-top: 3%;
-font-size: 35px;
-}
-.activity{
-font-size: 17px;
-}
-.inpbox-full {
-  width: 98%;
-  background: #fff;
-  padding: 3%;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1px;
-}
-.inpbox span::before {
-  margin-left: 0;
-}
-.inpbox span {
-  padding-right: px;
-  border-right: 2px solid #808080;
-}
-.bok-form {
-padding: 5%;
-}
-.bok-form select{
-  border: 0;
-  width: 100%;
-  color: #808080
-}
-.booking-input {
-  border: 0;
-  width: 100%;
-  height: 100%;
-  color: #808080;
-  font-size: 17px;
-  
-}
-.form select:focus, .booking-input {
-outline: none;
-}
-.inpbox {
-  width: 48%;
-  background: #fff;
-  padding: 3%;
-  margin-bottom: 20px;
-  margin-right: 2%;
-}
-.inrbox{
-width: 33%;
-color: #000;
-}
-.inrbox span{
-padding-right: 10px;
-}
-.inrbox span {
-  border: 0;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-.form .booking-input[type="radio"] {
-  width: unset;
-}
-button.subt, button.rst{
-padding: 2% 3%;
-font-weight: 700;
-text-transform: uppercase;
-border: 0;
-}
-button.subt {
-  margin-right: 3%;
-  background: #fff;
-}
-button.rst {
-  background: #000;
-  color: #fff;
-}
+    .booking-container {
+        width: 100%;
+        margin: 0 auto;
+        background-color: $main-color;
+    }
+    .book {
+        display: grid;
+        grid-template-areas: 
+        "description booking";
+    }
+    .description {
+        grid-area: description;
+        padding: 2em;
+    }
+    .description h1 {
+        text-transform: uppercase;
+        color: $dark;
+        font-weight: 400;
+        margin-top: 0;
+    }
+    .description h1 strong{
+        font-weight: 700;
+        color: #000;
+    }
+    .description p {
+        color: $dark;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .quote p {
+        font-style: italic;
+        padding: 2%;
+        border-left: 4px solid $main-color;
+    }
+    .description ul {
+        padding-left: 16px;
+        list-style: circle;
+    }
+    .description ul li{
+        margin: 10px 0;
+    }
+    .booking-form{
+        grid-area: booking;
+    }
+    .booking-form form{
+        color: #808080;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .booking-header {
+        margin-bottom: 20px;
+        color-interpolation-filters: $black;
+        margin-left: 5%;
+        margin-top: 3%;
+        font-size: 35px;
+    }
+    .activity{
+        font-size: 17px;
+    }
+    .inpbox-full {
+        width: 98%;
+        background: #fff;
+        padding: 3%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1px;
+    }
+    .inpbox span::before {
+        margin-left: 0;
+    }
+    .inpbox span {
+        padding-right: px;
+        border-right: 2px solid #808080;
+    }
+    .bok-form {
+        padding: 5%;
+    }
+    .bok-form select{
+        border: 0;
+        width: 100%;
+        color: #808080
+    }
+    .booking-input {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        color: #808080;
+        font-size: 17px;
+    }
+    .form select:focus, .booking-input {
+        outline: none;
+    }
+    .inpbox {
+        width: 48%;
+        background: #fff;
+        padding: 3%;
+        margin-bottom: 20px;
+        margin-right: 2%;
+    }
+    .inrbox{
+        width: 33%;
+        color: #000;
+    }
+    .inrbox span{
+        padding-right: 10px;
+    }
+    .inrbox span {
+        border: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .form .booking-input[type="radio"] {
+        width: unset;
+    }
+    button.subt, button.rst{
+        padding: 2% 3%;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 0;
+    }
+    button.subt {
+        margin-right: 3%;
+        background: #fff;
+    }
+    button.rst {
+        background: #000;
+        color: #fff;
+    }
 }
 /* FOOTER */
 
 footer{
-  grid-area: footer;
-  background-color: $dark;
-  ul{
-    display: flex;
-    flex-direction: row;
-    li{
-      margin: 1em;
-      list-style: none;
-      p{
-        color: $white;
-      }
+    grid-area: footer;
+    background-color: $dark;
+     ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            margin: 1em;
+            list-style: none;
+            p{
+                color: $white;
+            }
+        }
     }
-  }
 }
 
 /* MOBILE/TABLET */
