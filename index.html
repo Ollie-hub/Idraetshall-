@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 <body>
-<!-- NAV BAR -->
-<header>
 
-</header>   
-<!-- MAIN CONTENT -->
+<!-------------------------- NAV BAR -------------------------->
+<header>
+  <nav>
+      <div class="logo">
+          <label for="btn-fold" class="fold">
+              <img src="img/logo.png" alt="">
+          </label>
+          <input type="checkbox" id="btn-fold">
+      </div>
+      <ul>
+          <li><a href=""><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
+          <li><a href=""><i class="slimbar-i fas fa-users"></i><span>Medlemskap</span></a></li>
+          <li>
+              <label for="btn-1" class="first"><i class="slimbar-i fas fa-running"></i><span>Aktiviteter</span>
+                  <i class="fas fa-caret-down"></i>
+              </label>
+              <input type="checkbox" id="btn-1">
+              <ul>
+                  <li><a href=""><p class="slimbar-p">Ba</p><span>Badminton</span></a></li>
+                  <li><a href=""><p class="slimbar-p">Fo</p><span>Fodbold</span></a></li>
+                  <li><a href=""><p class="slimbar-p">Hå</p><span>Håndbold</span></a></li>
+                  <li><a href=""><p class="slimbar-p">Te</p><span>Tennis</span></a></li>
+              </ul>
+          </li>
+          <li><a href=""><i class="slimbar-i fas fa-address-card"></i><span>Kontakt</span></a></li>
+      </ul>
+  </nav>
+</header>
+
+<!-------------------------- MAIN CONTENT -------------------------->
 <main>
-    <!-- HERO SECTION -->
+    <!-------------------------- HERO SECTION -------------------------->
     <section class="hero">
+        
         <img name="slide" class="img-slide">
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="container2">
       
+    <!-------------------------- ABOUT SECTION -------------------------->
+    <section class="container">
         <div class="box1">
           <div>
             <img src="/Img/Hal_03.jpg" alt="" id="hp"/>
           </div>
           <div class="">
             <h2 class="hal">Om Hallen</h2>
-         <p> 
+         <p class="Andreas_fix"> 
             Hallen er paraplyorganisation for idrætsforeninger i Himmerland med ialt ca. 8.000 medlemmer.
             59 foreninger og tre landsdelsorganisationer med omkring 30 grupper tilsluttet.
             De tilsluttede foreninger rækker lige fra store idrætsforeninger 
@@ -38,14 +68,14 @@
             
         </div>
 </section>
-    <!-- ACTIVITIES SECTION -->
+    <!-------------------------- ACTIVITIES SECTION -------------------------->
         <article class="activity-article">
         <section class="activity-images">
             <div class="activities-container">
                 <img src="/Img/badminton_23.jpg" alt="badminton" class="image">
                 <div class="overlay">
                     <div class="head-text"> Badminton </div>
-                  <div class="text">Hello World</div>
+                  <div class="text">Vi tilbyder badminton til grupper på to eller fire personer</div>
                 </div>
               </div>
 
@@ -53,7 +83,7 @@
                 <img src="/Img/Hal_Handball_01.jpg" alt="håndboldt" class="image">
                 <div class="overlay">
                   <div class="head-text"> Håndboldt </div>
-                  <div class="text">Hello World</div>
+                  <div class="text">Vi tilbyder udlejning af vores håndboldt baner</div>
                 </div>
               </div>
 
@@ -61,7 +91,7 @@
                 <img src="/Img/image2.jpg" alt="fodbold" class="image">
                 <div class="overlay">
                     <div class="head-text"> Fodboldt </div>
-                  <div class="text">Hello World</div>
+                  <div class="text">Vi tilbyder udlejning af vores fodboldt baner</div>
                 </div>
               </div>
 
@@ -74,9 +104,16 @@
               </div>
             </section>
         </article>
-    <!-- BOOKING SECTION -->
 
-     <!-- MEMBERSHIP SECTION -->
+        <article class="activity-info">
+          <section class="badminton-section"></section>
+          <section class=""></section>
+          <section></section>
+          <section></section>
+        </article>
+    <!-------------------------- BOOKING SECTION -------------------------->
+   
+    <!-------------------------- MEMBERSHIP SECTION -------------------------->
 
       <div class="price-table-wrapper">
         <div class="pricing-table">
@@ -120,12 +157,17 @@
         </div>
       </div>
 
+ <!-- MEMBERSHIP SECTION -->   
+</main>
+
+<!-------------------------- FOOTER -------------------------->
+
+     
+
+
 
 </main>
 <!-- FOOTER -->
-
-<footer>
-
 
   <!-- icons and social -->
   <div class="icons--container">
@@ -203,5 +245,6 @@
 
 
 <script src="/js/main.js"></script>
+    
 </body>
 </html>

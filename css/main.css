@@ -4,11 +4,25 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* body grid*/
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header main"
+ "header footer";
+}
+
 /* NAV BAR*/
 /* MAIN CONTENT*/
+main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
+}
+
 /* ANDREAS */
-.container2 {
-  height: 700px;
+.container {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +55,7 @@
   font-family: 'segoe UI Historic';
   border-radius: 10px;
   position: relative;
-  right: 0.7vw;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +223,132 @@ p {
   padding-right: 15px;
 }
 
+
+/* OLIVER */
+.logo-text {
+  position: absolute;
+  z-index: 100;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20%;
+}
+
+.img-slide {
+  width: 100%;
+  height: 100vh;
+}
+
+#activty-header {
+  margin-left: 41%;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.activity-article {
+  height: 900px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #282c35;
+}
+
+.activity-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin-left: 15vw;
+}
+
+.activities-container {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin-top: 10%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #569898;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.activities-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.head-text {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* BOOKING SECTION */
+.booking-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.activity-info-article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  height: 500px;
+  background-color: green;
+  margin-left: 100px;
+}
+
+.activity-info-section {
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  width: 300px;
+  background-color: indianred;
+}
+
+.booking-form {
+  display: -ms-grid;
+  display: grid;
+  height: 500px;
+  margin-left: 100px;
+  background-color: orange;
+}
+
+/* FOOTER */
 footer {
   color: #889FB1;
   background-color: #282c35;
@@ -389,90 +529,43 @@ form input {
 }
 
 /* OLIVER */
-.img-slide {
+.mobile--wrapper {
   width: 100%;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#activty-header {
-  margin-left: 41%;
-  font-size: 4rem;
-  color: #fff;
+.mobile {
+  display: none;
 }
 
-.activity-article {
-  height: 100vh;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #282c35;
+/* form end */
+/* Links and partners */
+.anchor--container {
+  width: 30%;
+  margin-top: 20px;
 }
 
-.activity-images {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.anchor--container :last-child {
+  margin-bottom: 55px;
 }
 
-.activities-container {
-  position: relative;
-  width: 500px;
-  height: 350px;
-  margin: 10%;
+.anchor--container :nth-child(n) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: 100%;
+.anchor--container p {
+  font-size: 2.5em;
+  padding-bottom: 5px;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #569898;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-
-.activities-container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.head-text {
-  color: white;
-  font-size: 35px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* FOOTER */
 /* MOBILE/TABLET */
 @media (max-width: 1200px) {
   footer {
