@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -17,7 +18,7 @@
           <label for="btn-fold" class="fold">
               <img src="img/logo.png" alt="">
           </label>
-          <input type="checkbox" id="btn-fold">
+          <input class="nav-input" type="checkbox" id="btn-fold">
       </div>
       <ul>
           <li><a href=""><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
@@ -26,7 +27,7 @@
               <label for="btn-1" class="first"><i class="slimbar-i fas fa-running"></i><span>Aktiviteter</span>
                   <i class="fas fa-caret-down"></i>
               </label>
-              <input type="checkbox" id="btn-1">
+              <input class="nav-input" type="checkbox" id="btn-1">
               <ul>
                   <li><a href=""><p class="slimbar-p">Ba</p><span>Badminton</span></a></li>
                   <li><a href=""><p class="slimbar-p">Fo</p><span>Fodbold</span></a></li>
@@ -112,15 +113,68 @@
           <section></section>
         </article>
     <!-------------------------- BOOKING SECTION -------------------------->
-   <section class="booking-section">
-     
-    <form class="booking-form">
-    </form>
+   <div class="booking-container">
+     <div class="book">
+       <div class="description">
+         <h1><strong>Book</strong>din aktivitet!</h1>
+         <br>
+         <p>Vi tilbyder fire forskelige aktiviteter som du kan booke.</p>
+         <div class="act-info">
+           <p>
+            Det koster kun 75 kr pr. time for en bane.
+            Man skal selv medbringe ketcher, bolde samt indesko.
+            
+            
+            Hvis man kommer til en aflåst hal i en skoleferie eller weekend, kontaktes Lotte Madsen på 26 64 49 95
+            
+            
+            Der må ikke benyttes sko med sorte såler.</p>
+            <br>
+         </div>
 
-     <article class="booking-calendar">
+         <ul>
+           <li>Badminton</li>
+           <li>Håndbold</li>
+           <li>Fodbold</li>
+           <li>Cardio</li>
+         </ul>
+       </div>
+       <div class="booking-form">
+         <h3 class="booking-header">BOOK HER!</h3>
+         <form class="bok-form">
+           
+           <div class="inpbox-full">
 
-     </article>
-   </section>
+             <select class="activity">
+               <option value="">Vælg aktivitet</option>
+               <option value="">Badminton</option>
+               <option value="">Håndbold</option>
+               <option value="">Fodbold</option>
+               <option value="">Cardio</option>
+             </select>
+           </div>
+
+           <div class="inpbox">
+             <input class="booking-input" type="text" placeholder="Hvilken By"> 
+           </div>
+
+           <div class="inpbox">
+            <input class="booking-input" type="datetime-local" placeholder="Hvilken dato"> 
+          </div>
+
+          <div class="inpbox">
+            <input class="booking-input" type="text" placeholder="Navn"> 
+          </div>
+
+          <div class="inpbox">
+            <input class="booking-input" type="text" placeholder="Email"> 
+          </div>
+          <button class="subt">Submit</button>
+          <button class="rst">Reset</button>
+         </form>
+       </div>
+     </div>
+   </div>
     <!-------------------------- MEMBERSHIP SECTION -------------------------->
 
       <div class="price-table-wrapper">
@@ -169,8 +223,7 @@
 </main>
 
 <!-------------------------- FOOTER --------------------------> <!-- icons and social -->
-  
-</main>
+
 <!-- FOOTER -->
 
  
