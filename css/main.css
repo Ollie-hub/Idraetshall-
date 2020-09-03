@@ -75,7 +75,11 @@ main {
   margin-left: 40px;
 }
 
+<<<<<<< HEAD
 p {
+=======
+.Andreas_fix p {
+>>>>>>> 308397690f179c1cfccf1ab83a3f8419a74fc45c
   margin-right: 50px;
   margin-top: 200px;
   text-align: center;
@@ -358,7 +362,7 @@ form input {
 }
 
 .activity-article {
-  height: 100vh;
+  height: 900px;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -425,6 +429,40 @@ form input {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+/* BOOKING SECTION */
+.booking-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.activity-info-article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  height: 500px;
+  background-color: green;
+  margin-left: 100px;
+}
+
+.activity-info-section {
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  width: 300px;
+  background-color: indianred;
+}
+
+.booking-form {
+  display: -ms-grid;
+  display: grid;
+  height: 500px;
+  margin-left: 100px;
+  background-color: orange;
 }
 
 /* FOOTER */
