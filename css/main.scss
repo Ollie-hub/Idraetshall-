@@ -25,6 +25,8 @@ body{
 
 
 
+
+
 /* NAV BAR */
 header{ // af jannick nielsen :P
     grid-area: header;
@@ -131,6 +133,7 @@ main{
     grid-area: main;
 
     /* ANDREAS */
+    // dude det er scss hvorfor nester du ikke .....
     //selve siden//
     .container{  
         height: 100vh;
@@ -181,7 +184,10 @@ main{
         width:100%;
         font-size: xx-large;
     }
+
+
     //selve medlemskabskassernes klasse//
+    // fedt endlig en der nester :D
     .price-table-wrapper{
         font-family: 'Lato', sans-serif;
         text-align: center;
@@ -273,6 +279,8 @@ main{
 
     /* OLIVER */
 
+    // dude det er scss hvorfor nester du ikke .....
+
     .logo-text {
         position: absolute;
         z-index: 100;
@@ -361,7 +369,7 @@ main{
         text-align: center;
     }
     /* BOOKING SECTION */
-
+    // nest mig :'( jwf vil bare gerne NESTES!
     .booking-container {
         width: 100%;
         margin: 0 auto;
