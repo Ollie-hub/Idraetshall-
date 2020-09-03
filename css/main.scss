@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -166,7 +168,7 @@ body{
 }
 
 
- /* OLIVER */
+  /* OLIVER */
 
 .logo-text {
   position: absolute;
@@ -257,35 +259,134 @@ body{
   }
 /* BOOKING SECTION */
 
-.booking-section {
-  display: grid;
-  grid-template-rows: auto auto; 
+.booking-container {
+  width: 100%;
+  margin: 0 auto;
 }
-
-.activity-info-article {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  height: 500px;
-  background-color: green;
-  margin-left: 100px;
+.book {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.activity-info-section {
-  display: grid;
-  
-  height: 300px;
-  width: 300px;
-  background-color: indianred;
+.description , .form{
+    width: 40%;
+    padding: 5%;
 }
-
-.booking-form {
-  display: grid;
-  height: 500px;
-  margin-left: 100px;
-  background-color: orange;
+.description h1 {
+    text-transform: uppercase;
+    color: #808080;
+    font-weight: 400;
+    margin-top: 0;
 }
-
-
+.description h1 strong{
+  font-weight: 700;
+  color: #000;
+}
+.description p {
+    color: #808080;
+    font-size: 14px;
+    line-height: 22px;
+}
+.quote p {
+    font-style: italic;
+    padding: 2%;
+    border-left: 4px solid $main-color;
+}
+.description ul {
+    padding-left: 16px;
+    list-style: circle;
+}
+.description ul li{
+    margin: 10px 0;
+}
+.booking-form{
+  background: $main-color;
+}
+.booking-form form{
+  color: #808080;
+    display: flex;
+  flex-wrap: wrap;
+}
+.booking-header {
+  margin-bottom: 20px;
+  color-interpolation-filters: $black;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 35px;
+}
+.activity{
+  font-size: 17px;
+}
+.inpbox-full {
+    width: 98%;
+    background: #fff;
+    padding: 3%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1px;
+}
+.inpbox span::before {
+    margin-left: 0;
+}
+.inpbox span {
+    padding-right: px;
+    border-right: 2px solid #808080;
+}
+.bok-form {
+  padding: 5%;
+}
+.bok-form select{
+    border: 0;
+    width: 100%;
+    color: #808080
+}
+.booking-input {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    color: #808080;
+    font-size: 17px;
+    
+}
+.form select:focus, .booking-input {
+  outline: none;
+}
+.inpbox {
+    width: 48%;
+    background: #fff;
+    padding: 3%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+.inrbox{
+  width: 33%;
+  color: #000;
+}
+.inrbox span{
+  padding-right: 10px;
+}
+.inrbox span {
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.form .booking-input[type="radio"] {
+    width: unset;
+}
+button.subt, button.rst{
+  padding: 2% 3%;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+button.subt {
+    margin-right: 3%;
+    background: #fff;
+}
+button.rst {
+    background: #000;
+    color: #fff;
+}
 /* FOOTER */
 
 /* MOBILE/TABLET */
