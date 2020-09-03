@@ -26,20 +26,20 @@
             </div>
         </div>
         <ul>
-            <li><a href=""><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
-            <li><a href=""><i class="slimbar-i fas fa-users"></i><span>Medlemskap</span></a></li>
+            <li><a href="#omhallen"><i class="slimbar-i fas fa-info-circle"></i><span>Om Hallen</span></a></li>
             <li>
                 <label for="btn-1" class="first"><i class="slimbar-i fas fa-running"></i><span>Aktiviteter</span>
                     <i class="fas fa-caret-down"></i>
                 </label>
                 <input type="checkbox" id="btn-1">
                 <ul>
-                    <li><a href=""><p class="slimbar-p">Ba</p><span>Badminton</span></a></li>
-                    <li><a href=""><p class="slimbar-p">Fo</p><span>Fodbold</span></a></li>
-                    <li><a href=""><p class="slimbar-p">Hå</p><span>Håndbold</span></a></li>
-                    <li><a href=""><p class="slimbar-p">Te</p><span>Tennis</span></a></li>
+                    <li><a href="#ba"><p class="slimbar-p">Ba</p><span>Badminton</span></a></li>
+                    <li><a href="#ca"><p class="slimbar-p">Ca</p><span>Cardio</span></a></li> 
+                    <li><a href="#fo"><p class="slimbar-p">Fo</p><span>Fodbold</span></a></li>
+                    <li><a href="#hå"><p class="slimbar-p">Hå</p><span>Håndbold</span></a></li>
                 </ul>
             </li>
+            <li><a href="#Medlemskap"><i class="slimbar-i fas fa-users"></i><span>Medlemskap</span></a></li>
             <li><a href=""><i class="slimbar-i fas fa-address-card"></i><span>Kontakt</span></a></li>
         </ul>
     </nav>
@@ -55,7 +55,7 @@
     <section class="container2">
       
     <!-------------------------- ABOUT SECTION -------------------------->
-    <section class="container">
+    <section class="container" id="omhallen">
         <article class="box1">
           <div>
             <img src="/Img/Hal_03.jpg" alt="" class="hp"/>
@@ -77,7 +77,7 @@
         <article class="activity-article">
         <section class="activity-images">
             <div class="activities-container">
-                <img src="/Img/badminton_23.jpg" alt="badminton" class="image">
+                <img src="/Img/badminton_23.jpg" alt="badminton" class="image" id="ba">
                 <div class="overlay">
                     <div class="head-text"> Badminton </div>
                   <div class="text">Vi tilbyder badminton til grupper på to eller fire personer</div>
@@ -85,7 +85,7 @@
               </div>
 
               <div class="activities-container">
-                <img src="/Img/Hal_Handball_01.jpg" alt="håndboldt" class="image">
+                <img src="/Img/Hal_Handball_01.jpg" alt="håndboldt" class="image" id="hå">
                 <div class="overlay">
                   <div class="head-text"> Håndboldt </div>
                   <div class="text">Vi tilbyder udlejning af vores håndboldt baner</div>
@@ -93,7 +93,7 @@
               </div>
 
               <div class="activities-container">
-                <img src="/Img/image2.jpg" alt="fodbold" class="image">
+                <img src="/Img/image2.jpg" alt="fodbold" class="image" id="fo">
                 <div class="overlay">
                     <div class="head-text"> Fodboldt </div>
                   <div class="text">Vi tilbyder udlejning af vores fodboldt baner</div>
@@ -101,7 +101,7 @@
               </div>
 
               <div class="activities-container">
-                <img src="/Img/p3090008.jpg" alt="cardio" class="image">
+                <img src="/Img/p3090008.jpg" alt="cardio" class="image" id="ca">
                 <div class="overlay">
                     <div class="head-text"> Cardio </div>
                   <div class="text">Vi tilbyder fælles Cardio i grupper</div>
@@ -110,15 +110,9 @@
             </section>
         </article>
 
-        <article class="activity-info">
-          <section class="badminton-section"></section>
-          <section class=""></section>
-          <section></section>
-          <section></section>
-        </article>
     <!-------------------------- BOOKING SECTION -------------------------->
-   <div class="booking-container">
-     <div class="book">
+    <div class="booking-container">
+        <div class="book">
        <div class="description">
          <h1><strong>Book</strong>din aktivitet!</h1>
          <br>
@@ -179,15 +173,13 @@
        </div>
      </div>
    </div>
-    <!-------------------------- MEMBERSHIP SECTION -------------------------->
+       <!-------------------------- MEMBERSHIP SECTION -------------------------->
 
-      <div class="price-table-wrapper">
+       <div class="price-table-wrapper" id="Medlemskap">
         <div class="pricing-table">
           <h2 class="pricing-table__header">- ordinært medlemskab -</h2>
           <h3 class="pricing-table__price">1000,-</h3>
-          <a target="_blank" class="pricing-table__button" href="#">
-            Køb nu!
-          </a>
+          <a target="_blank" class="pricing-table__button" href="#">Køb nu!</a>
           <ul class="pricing-table__list">
             <li>reduceret pris på booking</li>
             <li></li>
@@ -198,9 +190,7 @@
         <div class="pricing-table featured-table">
           <h2 class="pricing-table__header">- Sport10+ -</h2>
           <h3 class="pricing-table__price">800,-</h3>
-          <a target="_blank" class="pricing-table__button" href="#">
-            Køb nu!
-          </a>
+          <a target="_blank" class="pricing-table__button" href="#">Køb nu!</a>
           <ul class="pricing-table__list">
             <li>Social hygge</li>
             <li>trænere specielt til børn og unge</li>
@@ -211,9 +201,7 @@
         <div class="pricing-table">
           <h2 class="pricing-table__header">- Sport60+ -</h2>
           <h3 class="pricing-table__price">1200,-</h3>
-          <a target="_blank" class="pricing-table__button" href="#">
-            Køb nu!
-          </a>
+          <a target="_blank" class="pricing-table__button" href="#">Køb nu!</a>
           <ul class="pricing-table__list">
             <li>reduceret pris på booking</li>
             <li>Social hygge</li>
@@ -227,9 +215,16 @@
 </main>
 
 <!-------------------------- FOOTER --------------------------> 
+    <footer>
+       <ul>
+           <li><p>placeholder</p></li>
+           <li><p>placeholder</p></li>
+           <li><p>placeholder</p></li>
+           <li><p>placeholder</p></li>
+       </ul>
+    </footer>
 
-
-<!-- FOOTER -->
+<!-- SCRIPTS -->
     <script src="/js/main.js"></script>
     <script src="js/sidenav.js"></script>
 </body>
