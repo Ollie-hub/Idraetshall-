@@ -56,6 +56,7 @@ header nav .nav-header .logo {
 header nav .nav-header .logo label img {
   width: 70px;
   height: 70px;
+  margin-bottom: -4px;
 }
 
 header nav .nav-header .logo #btn-fold {
