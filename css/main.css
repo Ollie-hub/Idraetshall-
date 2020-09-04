@@ -11,6 +11,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* BODY GRID*/
 body {
   display: -ms-grid;
